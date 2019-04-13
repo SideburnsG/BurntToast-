@@ -4,7 +4,13 @@ from tkinter import scrolledtext
 import imaplib, smtplib, email, getpass
 from email.parser import HeaderParser
 
-"""Have to figure out the revmove_deleete function"""
+"""Note that this will only work on gmail servers but working on adding 'imap.live.com' functionality for hotmail as well 
+   Still Going to be working on optimizing the check_mail and delete_mail possibly using the threading module to make a worker pool
+   to shorten the time it takes. because right now it loops through the emails 1 at a time. it also interupts the tkinter mainloop
+   causing it to hang until the emails are fetched still need to figure out how to make it fetch emails faster. There has to be a 
+   better way to loop through and do the deleting. 
+   The sort functionality hasn't been added yet still not sure if i will be finishing that one or just deleting it.
+   I am self taught and still a begginer so any input on this is much appreciated if anyone with some experience happens to see this."""
 
 
 addresses = []
